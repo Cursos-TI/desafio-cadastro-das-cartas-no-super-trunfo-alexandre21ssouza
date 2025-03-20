@@ -226,13 +226,11 @@ int main() {
     printf("insira a opção do quesito 1 a ser comparado: ");
     scanf("%d", &opcao_quesito);
     printf("\n");
-    printf("\n");
 
     switch (opcao_quesito)
     {
     case 1:  
-    
-        printf("2-Área\n");
+         printf("2-Área\n");
          printf("3-PIB\n");
          printf("4-Ponto Turístico\n");
          printf("5-Densidade Populacional\n");
@@ -245,7 +243,7 @@ int main() {
      scanf("%d", &opcao_quesito_dois);
      printf("\n");
 
-    opcao_quesito_dois == 1 ? printf("Opção inválida, selecionada anteriormente!"):
+    opcao_quesito_dois == 1 ? printf("Opção inválida, selecionada anteriormente!\n"):
     printf("Vamos lá!\n");
      
      break;
