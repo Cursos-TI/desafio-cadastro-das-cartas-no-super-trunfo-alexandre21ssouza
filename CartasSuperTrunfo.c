@@ -39,7 +39,8 @@ int main() {
     float super_poder_dois;
 
     //Variável de comparação: opção de quesito
-    int opcao;
+    int opcao_quesito;
+    int opcao_quesito_dois;
    
     // Apresentando o jogo e Solicitandp ao usuário que insira as informações dos dados.
     printf("BEM-VINDO AO JOGO DE CARTAS SUPER TRUNFO!\n");
@@ -209,7 +210,7 @@ int main() {
     //Menu de Opções de comparação
     printf("Menu de combate de quesitos das Cartas: \n");
     printf("\n");
-    printf("Escolha uma opção válida que represente um quesito a ser Comparado no desfio!\n");
+    printf("Escolha duas opções válidas que represente os quesitos a serem Comparados no desfio!\n");
     printf("Opções:\n");
     printf("1-População\n");
     printf("2-Área\n");
@@ -218,14 +219,155 @@ int main() {
     printf("5-Densidade Populacional\n");
     printf("6-PIB Per Capita\n");
     printf("7-Super Poder\n");
-
-    //inserindo opção desejada do menu
-    printf("insira a opção: ");
-    scanf("%d", &opcao);
     printf("\n");
 
+    //inserindo as 2 opções desejada do menu
+    //Opção 1
+    printf("insira a opção do quesito 1 a ser comparado: ");
+    scanf("%d", &opcao_quesito);
+    printf("\n");
+    printf("\n");
+
+    switch (opcao_quesito)
+    {
+    case 1:  
+    
+        printf("2-Área\n");
+         printf("3-PIB\n");
+         printf("4-Ponto Turístico\n");
+         printf("5-Densidade Populacional\n");
+         printf("6-PIB Per Capita\n");
+         printf("7-Super Poder\n");
+         printf("\n");
+
+     //Escolha Opção quesito 2 a ser comparado
+     printf("insira a opção válida do quesito 2 a ser comparado: ");
+     scanf("%d", &opcao_quesito_dois);
+     printf("\n");
+
+    opcao_quesito_dois == 1 ? printf("Opção inválida, selecionada anteriormente!"):
+    printf("Vamos lá!\n");
+     
+     break;
+    
+     case 2:  
+         printf("1-População\n");
+         printf("3-PIB\n");
+         printf("4-Ponto Turístico\n");
+         printf("5-Densidade Populacional\n");
+         printf("6-PIB Per Capita\n");
+         printf("7-Super Poder\n");
+         printf("\n");
+     
+          //Escolha Opção quesito 2 a ser comparado
+          printf("insira a opção válida do quesito 2 a ser comparado: ");
+          scanf("%d", &opcao_quesito_dois);
+          printf("\n");
+     
+         opcao_quesito_dois == 2 ? printf("Opção inválida, já foi escolhida anteriormente!"):
+         printf("Vamos lá!\n");
+          
+     break;
+
+    case 3:  
+         printf("1-População\n");
+         printf("2-Área\n");
+         printf("4-Ponto Turístico\n");
+         printf("5-Densidade Populacional\n");
+         printf("6-PIB Per Capita\n");
+         printf("7-Super Poder\n");
+         printf("\n");
+     
+          //Escolha Opção quesito 2 a ser comparado
+          printf("insira a opção válida do quesito 2 a ser comparado: ");
+          scanf("%d", &opcao_quesito_dois);
+          printf("\n");
+     
+         opcao_quesito_dois == 3 ? printf("Opção inválida, já foi escolhida anteriormente!"):
+         printf("Vamos lá!\n");
+          
+     break;
+
+     case 4:  
+         printf("1-População\n");
+         printf("2-Área\n");
+         printf("3-PIB\n");
+         printf("5-Densidade Populacional\n");
+         printf("6-PIB Per Capita\n");
+         printf("7-Super Poder\n");
+         printf("\n");
+     
+          //Escolha Opção quesito 2 a ser comparado
+          printf("insira a opção válida do quesito 2 a ser comparado: ");
+          scanf("%d", &opcao_quesito_dois);
+          printf("\n");
+     
+         opcao_quesito_dois == 4 ? printf("Opção inválida, já foi escolhida anteriormente!"):
+         printf("Vamos lá!\n");
+          
+      break;
+     case 5:  
+         printf("1-População\n");
+         printf("2-Área\n");
+         printf("3-PIB\n");
+         printf("4-Ponto Turístico\n");
+         printf("6-PIB Per Capita\n");
+         printf("7-Super Poder\n");
+         printf("\n");
+     
+          //Escolha Opção quesito 2 a ser comparado
+          printf("insira a opção válida do quesito 2 a ser comparado: ");
+          scanf("%d", &opcao_quesito_dois);
+          printf("\n");
+     
+         opcao_quesito_dois == 5 ? printf("Opção inválida, já foi escolhida anteriormente!"):
+         printf("Vamos lá!\n");
+          
+      break;
+    case 6:  
+         printf("1-População\n");
+         printf("2-Área\n");
+         printf("3-PIB\n");
+         printf("4-Ponto Turístico\n");
+         printf("5-Densidade Populacional\n");
+         printf("7-Super Poder\n");
+         printf("\n");
+     
+          //Escolha Opção quesito 2 a ser comparado
+          printf("insira a opção válida do quesito 2 a ser comparado: ");
+          scanf("%d", &opcao_quesito_dois);
+          printf("\n");
+     
+         opcao_quesito_dois == 6 ? printf("Opção inválida, já foi escolhida anteriormente!"):
+         printf("Vamos lá!\n");
+          
+       break;
+    case 7:  
+         printf("1-População\n");
+         printf("2-Área\n");
+         printf("3-PIB\n");
+         printf("4-Ponto Turístico\n");
+         printf("5-Densidade Populacional\n");
+         printf("6-PIB Per Capita\n");
+         printf("\n");
+     
+          //Escolha Opção quesito 2 a ser comparado
+          printf("insira a opção válida do quesito 2 a ser comparado: ");
+          scanf("%d", &opcao_quesito_dois);
+          printf("\n");
+     
+         opcao_quesito_dois == 7 ? printf("Opção inválida, já foi escolhida anteriormente!"):
+         printf("Vamos lá!\n");
+          
+      break;
+
+    default:
+    printf("Escolha uma opção do menu válida!");
+        break;
+    }
+   
     //Estrutura de decisões aninhadas
-    switch (opcao)
+    switch (opcao_quesito)
     {
     case 1:  
     
