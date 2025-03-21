@@ -41,6 +41,12 @@ int main() {
     //Variável de comparação: opção de quesito
     int opcao_quesito;
     int opcao_quesito_dois;
+    int resultado_um;
+    int resultado_dois;
+
+    //Variável de soma dos valores dos atributos para cada carta.
+    float soma_um;
+    float soma_dois;
    
     // Apresentando o jogo e Solicitandp ao usuário que insira as informações dos dados.
     printf("BEM-VINDO AO JOGO DE CARTAS SUPER TRUNFO!\n");
@@ -227,6 +233,12 @@ int main() {
     scanf("%d", &opcao_quesito);
     printf("\n");
 
+    /*Variável resultado_um, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+      */
+    resultado_um = opcao_quesito;
+
     switch (opcao_quesito)
     {
     case 1:  
@@ -242,6 +254,13 @@ int main() {
      printf("insira a opção válida do quesito 2 a ser comparado: ");
      scanf("%d", &opcao_quesito_dois);
      printf("\n");
+
+
+    /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+     */
+     resultado_dois = opcao_quesito_dois;
 
     opcao_quesito_dois == 1 ? printf("Opção inválida, selecionada anteriormente!\n"):
     printf("Vamos lá!\n");
@@ -262,6 +281,12 @@ int main() {
           scanf("%d", &opcao_quesito_dois);
           printf("\n");
      
+           /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+     */
+     resultado_dois = opcao_quesito_dois;
+
          opcao_quesito_dois == 2 ? printf("Opção inválida, já foi escolhida anteriormente!"):
          printf("Vamos lá!\n");
           
@@ -280,6 +305,12 @@ int main() {
           printf("insira a opção válida do quesito 2 a ser comparado: ");
           scanf("%d", &opcao_quesito_dois);
           printf("\n");
+          
+           /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+     */
+     resultado_dois = opcao_quesito_dois;
      
          opcao_quesito_dois == 3 ? printf("Opção inválida, já foi escolhida anteriormente!"):
          printf("Vamos lá!\n");
@@ -299,6 +330,12 @@ int main() {
           printf("insira a opção válida do quesito 2 a ser comparado: ");
           scanf("%d", &opcao_quesito_dois);
           printf("\n");
+          
+           /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+     */
+    resultado_dois = opcao_quesito_dois;
      
          opcao_quesito_dois == 4 ? printf("Opção inválida, já foi escolhida anteriormente!"):
          printf("Vamos lá!\n");
@@ -317,6 +354,12 @@ int main() {
           printf("insira a opção válida do quesito 2 a ser comparado: ");
           scanf("%d", &opcao_quesito_dois);
           printf("\n");
+          
+           /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+     */
+    resultado_dois = opcao_quesito_dois;
      
          opcao_quesito_dois == 5 ? printf("Opção inválida, já foi escolhida anteriormente!"):
          printf("Vamos lá!\n");
@@ -335,6 +378,12 @@ int main() {
           printf("insira a opção válida do quesito 2 a ser comparado: ");
           scanf("%d", &opcao_quesito_dois);
           printf("\n");
+          
+           /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+     */
+    resultado_dois = opcao_quesito_dois;
      
          opcao_quesito_dois == 6 ? printf("Opção inválida, já foi escolhida anteriormente!"):
          printf("Vamos lá!\n");
@@ -353,6 +402,12 @@ int main() {
           printf("insira a opção válida do quesito 2 a ser comparado: ");
           scanf("%d", &opcao_quesito_dois);
           printf("\n");
+          
+           /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
+    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+     um código mais claro e de melhor reparo. 
+     */
+    resultado_dois = opcao_quesito_dois;
      
          opcao_quesito_dois == 7 ? printf("Opção inválida, já foi escolhida anteriormente!"):
          printf("Vamos lá!\n");
@@ -367,10 +422,11 @@ int main() {
     //Estrutura de comparação de quesitos / decisões aninhadas
     
     printf("\n");
-    printf("Quesito de comparação 2:\n");
+    printf("Quesito de comparação 1:\n");
     printf("\n");
 
-    switch (opcao_quesito)
+    //Variável resultado_um sendo usada
+    switch (resultado_um)
     {
         case 1:
     
@@ -515,10 +571,36 @@ int main() {
             printf("Houve um empate!\n");
         }
         break;
+    case 7:
+
+        //Super Poder > maior vence
+        //Impressão dos dados do quesito:
+        printf("Comparação da Opção do Segundo quesito:\n");
+        printf("Quesito Super Poder: \n\n");
+        printf("Nome do País Carta 1: %s\n", nome_do_pais);
+        printf("Nome da Cidade: %s\n ", nome_da_cidade);
+        printf("Super Poder: %.2f\n\n", super_poder);
+        printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
+        printf("Nome da Cidade: %s\n ", nome_da_cidade_dois);
+        printf("Super Poder: %.2f\n\n",super_poder_dois);
+        printf("Resultado: ");
+        
+        //Lógica da comparação e impressão do resultado
+        if (super_poder > super_poder_dois){
+            printf("Carta 1 venceu!");
+        } else if (super_poder < super_poder_dois){
+            printf("Carta 2 venceu!");
+        } else {
+            printf("Houve um empate!");
     
-        default:
+        };
+    
+    break;
+    
+     default:
         printf("Opção de comparação inválida!\n");
-        break;
+     break;
+    };
     
 
     printf("\n");
@@ -526,7 +608,8 @@ int main() {
     printf("\n");
 
 
-    switch (opcao_quesito_dois)
+    //Variável resultado_dois sendo usada
+    switch (resultado_dois)
     {
         case 1:
         // População > maior vence
@@ -706,6 +789,10 @@ int main() {
     printf("\n");
     printf("\n");
 
+//Soma dos valores dos atributos para cada carta.
+
+soma_um = 
+
     printf("Obrigado por jogar!");
 
     printf("\n");
@@ -713,5 +800,5 @@ int main() {
     
     return 0;
 };
-}
+
 
