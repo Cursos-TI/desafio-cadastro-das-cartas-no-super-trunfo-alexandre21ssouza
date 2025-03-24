@@ -45,6 +45,10 @@ int main() {
     int resultado_dois;
 
     //Variável de soma dos valores dos atributos para cada carta.
+    float valor_carta_um_atributo_um;
+    float valor_carta_um_atributo_dois;
+    float valor_carta_dois_atributo_um;
+    float valor_carta_dois_atributo_dois;
     float soma_um;
     float soma_dois;
    
@@ -211,6 +215,7 @@ int main() {
 
     printf("\n");
     printf("\n");
+    printf("----------------------------------//----------------------------------");
 
     // Local da lógica de Comparação dos Atributos das Cartas 1 e 2: 
     //Menu de Opções de comparação
@@ -225,8 +230,9 @@ int main() {
     printf("5-Densidade Populacional\n");
     printf("6-PIB Per Capita\n");
     printf("7-Super Poder\n");
-    printf("\n");
+    printf("\n\n");
 
+    printf("----------------------------------//----------------------------------");
     //inserindo as 2 opções desejada do menu
     //Opção 1
     printf("insira a opção válida do quesito 1 a ser comparado: ");
@@ -239,8 +245,8 @@ int main() {
       */
     resultado_um = opcao_quesito;
 
-    switch (opcao_quesito)
-    {
+
+    switch (opcao_quesito){
     case 1:  
          printf("2-Área\n");
          printf("3-PIB\n");
@@ -419,10 +425,11 @@ int main() {
         break;
     }
    
+    printf("----------------------------------//----------------------------------\n");
+    printf("RESULTADO DA COMPARAÇÃO DE QUESITOS INDIVIDUAIS!!!!\n");
     //Estrutura de comparação de quesitos / decisões aninhadas
     
-    printf("\n");
-    printf("Quesito de comparação 1:\n");
+
     printf("\n");
 
     //Variável resultado_um sendo usada
@@ -437,6 +444,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("População: %lu\n\n", populacao);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("População: %lu\n", populacao_dois);
@@ -461,6 +469,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Área: %.2f km²\n\n", area_km);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Área: %.2f km²\n", area_km_dois);
@@ -485,6 +494,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("PIB: %.2f\n\n", pib);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("PIB: %.2f\n", pib_dois);
@@ -509,6 +519,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Pontos Turísticos: %d\n\n", pontos_turisticos);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Pontos Turísticos: %d\n", pontos_turisticos_dois);
@@ -533,6 +544,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Densidade Populacional: %.2f\n\n", densidade_populacional);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Densidade Populacional: %.2f\n", densidade_populacional_dois);
@@ -557,6 +569,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Per Capita: %.2f\n\n", per_capita);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Per Capita: %.2f\n", per_capita_dois);
@@ -580,6 +593,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n ", nome_da_cidade);
         printf("Super Poder: %.2f\n\n", super_poder);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n ", nome_da_cidade_dois);
         printf("Super Poder: %.2f\n\n",super_poder_dois);
@@ -619,6 +633,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("População: %lu\n\n", populacao);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("População: %lu\n\n", populacao_dois);
@@ -642,6 +657,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Área: %.2f\n\n", area_km);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Área: %.2f\n\n", area_km_dois);
@@ -665,6 +681,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("PIB: %.2f\n\n", pib);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("PIB: %.2f\n\n", pib_dois);
@@ -688,6 +705,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Pontos Turísticos: %d\n\n", pontos_turisticos);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Pontos Turísticos: %d\n\n", pontos_turisticos_dois);
@@ -711,6 +729,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Densidade Populacional: %.2f\n\n", densidade_populacional);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Densidade Populacional: %.2f\n\n", densidade_populacional_dois);
@@ -734,6 +753,7 @@ int main() {
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
         printf("Nome da Cidade: %s\n", nome_da_cidade);
         printf("Per Capita: %.2f\n\n", per_capita);
+        printf("----------------------------------//----------------------------------");
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Per Capita: %.2f\n\n", per_capita_dois);
@@ -759,6 +779,7 @@ int main() {
     printf("Nome do País Carta 1: %s\n", nome_do_pais);
     printf("Nome da Cidade: %s\n ", nome_da_cidade);
     printf("Super Poder: %.2f\n\n", super_poder);
+    printf("----------------------------------//----------------------------------");
     printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
     printf("Nome da Cidade: %s\n ", nome_da_cidade_dois);
     printf("Super Poder: %.2f\n\n",super_poder_dois);
@@ -789,9 +810,238 @@ int main() {
     printf("\n");
     printf("\n");
 
-//Soma dos valores dos atributos para cada carta.
+//Preparando as variáveis para calcular a soma
+printf("Vamos somar os quesitos de cada carta, o maior vence!!!");
 
-soma_um = 
+//buscando os quesitos selecionados, para atribuir as váriáveis de valores para somar
+switch (resultado_um){
+    case 1:
+   /* Se resultado_um for 1 ou outro valor abaixo, as variáveis
+   valor_carta_um_atributo_um e valor_carta_dois_atributo_um 
+   receberão o valor correspondente ao quesito selecionado.
+   
+   Após essa atribuição, o programa executará o próximo switch,
+   que verificará resultado_dois e atribuirá o valor ao segundo
+   quesito a ser somado. */
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+    valor_carta_um_atributo_um = populacao;   
+    valor_carta_dois_atributo_um = populacao_dois;
+             
+    break;
+
+    case 2:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_um = area_km;
+     valor_carta_dois_atributo_um = area_km_dois;
+    
+    break;
+
+    case 3:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_um = pib;
+     valor_carta_dois_atributo_um = pib_dois;
+
+    break;
+
+    case 4:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_um = pontos_turisticos;
+     valor_carta_dois_atributo_um = pontos_turisticos_dois;
+
+    break;
+
+    case 5:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_um = densidade_populacional;
+     valor_carta_dois_atributo_um = densidade_populacional_dois;
+
+    break;
+
+    case 6:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_um = per_capita;
+     valor_carta_dois_atributo_um = per_capita_dois;
+
+    break;
+
+    case 7:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_um = super_poder;
+     valor_carta_dois_atributo_um = super_poder_dois;
+
+    break;
+
+    default:
+     printf("Opção 1 de soma invalida!");
+    break;
+}
+
+//Switch seguinte
+switch (resultado_dois){
+    case 1:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_dois = populacao;
+     valor_carta_dois_atributo_dois = populacao_dois;
+
+    break;
+
+    case 2:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+
+     valor_carta_um_atributo_dois = area_km;
+     valor_carta_dois_atributo_dois = area_km_dois;
+     
+    break;
+
+    case 3:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+     valor_carta_um_atributo_dois = pib;
+     valor_carta_dois_atributo_dois = pib_dois;
+     
+    break;
+
+    case 4:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+     valor_carta_um_atributo_dois = pontos_turisticos;
+     valor_carta_dois_atributo_dois = pontos_turisticos_dois;
+     
+    break;
+
+    case 5:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+     valor_carta_um_atributo_dois = densidade_populacional;
+     valor_carta_dois_atributo_dois = densidade_populacional_dois;
+     
+    break;
+
+    case 6:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+     valor_carta_um_atributo_dois = per_capita;
+     valor_carta_dois_atributo_dois = per_capita_dois;
+     
+    break;
+
+    case 7:
+    printf("Quesitos comparados: População\n\n");
+    printf("Nome do País carta 1: %s", nome_do_pais);
+    printf("Valor Carta 1: %lu\n"), populacao;
+    
+    printf("Nome do País carta 2: %s", nome_do_pais);
+    printf("Quesitos comparados: População");
+    printf("Valor Carta 1: %lu\n"), populacao_dois;
+     valor_carta_um_atributo_dois = super_poder;
+     valor_carta_dois_atributo_dois = super_poder_dois;
+     
+    break;
+
+    default:
+    printf("Opção 2 de soma invalida!");
+    break;
+}
+
+    printf("\n");
+    printf("----------------------------------//----------------------------------");
+    printf("\n");
+    ("RESULTADO DA SOMA DOS 2 ATRIBUTOS SELECIONÁDOS!!\n");
+    printf("Soma dos atributos carta 1: \n");
+
+//Soma dos valores dos quesito carta 1.
+    soma_um = valor_carta_um_atributo_um + valor_carta_um_atributo_dois;
+
+////Soma dos valores dos quesito carta 2.
+    soma_dois = valor_carta_dois_atributo_um + valor_carta_dois_atributo_dois;
+
+     
+    printf("\n");
+    printf("\n");
+
+    
 
     printf("Obrigado por jogar!");
 
