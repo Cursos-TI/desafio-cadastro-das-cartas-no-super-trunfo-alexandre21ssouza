@@ -53,7 +53,7 @@ int main() {
     float soma_dois;
    
     // Apresentando o jogo e Solicitandp ao usuário que insira as informações dos dados.
-    printf("BEM-VINDO AO JOGO DE CARTAS SUPER TRUNFO!\n");
+    printf("---------------------BEM-VINDO AO JOGO DE CARTAS SUPER TRUNFO---------------------\n\n");
     printf("VAMOS COMEÇAR!\n");
 
     // Usando função printf com \n para saltar linhas, para organizar mais os dados exibidos.
@@ -62,14 +62,12 @@ int main() {
     // Utilizando a função scanf para capturar as entradas do usuário para cada atributo.
     // Usando a função fgets para ter acesso a países com nomes compostos.
     // Usando a função printf para mostrar os dados em tela.
-    printf("Prepare-se para inserir as informações das Cartas:\n");
-    printf("\n");
+    printf("Prepare-se para inserir as informações das Cartas:\n\n");
 
     // Cadastro da Carta:
     //Carta 1
-    printf("---------------------CADASTRO DAS CARTAS---------------------\n");
-    printf("Cadastre a carta número 1!\n");
-    printf("\n");
+    printf("---------------------CADASTRO DAS CARTAS---------------------\n\n\n\n");
+    printf("-------Cadastre a carta número 1-------------\n\n");
     printf("Carta: %d\n", carta_um);
 
     //Dados Nome País:
@@ -117,7 +115,7 @@ int main() {
     printf("\n");
     printf("\n");
 
-    printf("---------------------//---------------------\n");
+    printf("-------Cadastre a carta número 2-------------\n");
     printf("\n");
     printf("\n");
 
@@ -220,10 +218,10 @@ int main() {
 
     // Local da lógica de Comparação dos Atributos das Cartas 1 e 2: 
     //Menu de Opções de comparação
-    printf("Menu de combate de quesitos das Cartas: \n");
+    printf("-------Menu de combate de quesitos das Cartas------- \n");
     printf("\n");
     printf("Escolha duas opções válidas que represente os quesitos a serem Comparados no desfio!\n\n");
-    printf("Opções:\n");
+    printf("Quesitos:\n");
     printf("1-População\n");
     printf("2-Área\n");
     printf("3-PIB\n");
@@ -427,7 +425,7 @@ int main() {
     }
    
     //Estrutura de comparação de quesitos / decisões aninhadas
-    printf("---------DUELO DE QUESITOS INDIVIDUAIS!---------\n");
+    printf("---------------------DUELO DE QUESITOS INDIVIDUAIS SELECIONADOS---------------------\n");
     printf("\n");
 
     printf("---------QUESITO 1 ---------\n");
@@ -438,7 +436,7 @@ int main() {
     
         // População > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Primeiro quesito:\n----");
+        printf("Comparação do Primeiro quesito\n");
         printf("Quesito: População\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -448,7 +446,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("População: %lu\n", populacao_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 1 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (populacao > populacao_dois) {
@@ -464,7 +463,7 @@ int main() {
         
         // Área > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Primeiro quesito:----\n");
+        printf("Comparação do Primeiro quesito\n");
         printf("Quesito: Área\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -474,7 +473,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Área: %.2f km²\n", area_km_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 1 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (area_km > area_km_dois) {
@@ -490,7 +490,7 @@ int main() {
         
         // PIB > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Primeiro quesito:----\n");
+        printf("Comparação do Primeiro quesito\n");
         printf("Quesito: PIB\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -500,7 +500,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("PIB: %.2f\n", pib_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 1 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (pib > pib_dois) {
@@ -516,7 +517,7 @@ int main() {
         
         // Pontos turísticos > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Primeiro quesito:----\n");
+        printf("Comparação do Primeiro quesito\n");
         printf("Quesito: Pontos Turísticos\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -526,7 +527,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Pontos Turísticos: %d\n", pontos_turisticos_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 1 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (pontos_turisticos > pontos_turisticos_dois) {
@@ -542,7 +544,7 @@ int main() {
         
         // Densidade Populacional < menor vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Primeiro quesito:----\n");
+        printf("Comparação do Primeiro quesito\n");
         printf("Quesito: Densidade Populacional\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -552,7 +554,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Densidade Populacional: %.2f\n", densidade_populacional_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 1 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (densidade_populacional < densidade_populacional_dois) {
@@ -568,7 +571,7 @@ int main() {
         
         // Per Capita > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Primeiro quesito:----\n");
+        printf("Comparação do Primeiro quesito\n");
         printf("Quesito: Per Capita\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -578,7 +581,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Per Capita: %.2f\n", per_capita_dois);
-        printf("Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 1 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (per_capita > per_capita_dois) {
@@ -593,7 +597,7 @@ int main() {
 
         //Super Poder > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Primeiro quesito:----\n");
+        printf("Comparação do Primeiro quesito\n");
         printf("Quesito Super Poder: \n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -603,7 +607,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n ", nome_da_cidade_dois);
         printf("Super Poder: %.2f\n\n",super_poder_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 1 individual selecionado: ");
         
         //Lógica da comparação e impressão do resultado
         if (super_poder > super_poder_dois){
@@ -634,7 +639,7 @@ int main() {
         case 1:
         // População > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Segundo quesito:\n----");
+        printf("Comparação do Segundo quesito\n");
         printf("Quesito: População\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -644,7 +649,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("População: %lu\n", populacao_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 2 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (populacao > populacao_dois) {
@@ -660,7 +666,7 @@ int main() {
         
         // Área > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Segundo quesito:\n----");
+        printf("Comparação do Segundo quesito\n");
         printf("Quesito: Área\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -670,7 +676,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Área: %.2f km²\n", area_km_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 2 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (area_km > area_km_dois) {
@@ -686,7 +693,7 @@ int main() {
         
         // PIB > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Segundo quesito:\n----");
+        printf("Comparação do Segundo quesito\n");
         printf("Quesito: PIB\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -696,7 +703,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("PIB: %.2f\n", pib_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 2 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (pib > pib_dois) {
@@ -712,7 +720,7 @@ int main() {
         
         // Pontos turísticos > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Segundo quesito:\n----");
+        printf("Comparação do Segundo quesito\n");
         printf("Quesito: Pontos Turísticos\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -722,7 +730,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Pontos Turísticos: %d\n", pontos_turisticos_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 2 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (pontos_turisticos > pontos_turisticos_dois) {
@@ -738,7 +747,7 @@ int main() {
         
         // Densidade Populacional < menor vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Segundo quesito:\n----");
+        printf("Comparação do Segundo quesito\n");
         printf("Quesito: Densidade Populacional\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -748,7 +757,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Densidade Populacional: %.2f\n", densidade_populacional_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 2 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (densidade_populacional < densidade_populacional_dois) {
@@ -764,7 +774,7 @@ int main() {
         
         // Per Capita > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Segundo quesito:\n----");
+        printf("Comparação do Segundo quesito\n");
         printf("Quesito: Per Capita\n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -774,7 +784,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n", nome_da_cidade_dois);
         printf("Per Capita: %.2f\n", per_capita_dois);
-        printf("Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 2 individual selecionado: ");
         
          //Lógica da comparação e impressão do resultado
         if (per_capita > per_capita_dois) {
@@ -789,7 +800,7 @@ int main() {
 
         //Super Poder > maior vence
         //Impressão dos dados do quesito:
-        printf("----Comparação do Segundo quesito:\n----");
+        printf("Comparação do Segundo quesito\n");
         printf("Quesito Super Poder: \n\n");
         printf("---------CARTA 1 ---------\n");
         printf("Nome do País Carta 1: %s\n", nome_do_pais);
@@ -799,7 +810,8 @@ int main() {
         printf("Nome do País Carta 2: %s\n", nome_do_pais_dois);
         printf("Nome da Cidade: %s\n ", nome_da_cidade_dois);
         printf("Super Poder: %.2f\n\n",super_poder_dois);
-        printf("# Resultado: ");
+        printf("\n\n\n");
+        printf("# Resultado da comparação do quesito 2 individual selecionado: ");
         
         //Lógica da comparação e impressão do resultado
         if (super_poder > super_poder_dois){
@@ -826,10 +838,10 @@ int main() {
     printf("\n");
     printf("\n");
 
-    printf("---------DUELO DA SOMA DOS QUESITOS INDIVIDUAIS DE CADA CARTA!---------\n\N");
+    printf("---------DUELO DA SOMA DOS QUESITOS INDIVIDUAIS DE CADA CARTA---------\n\n\n");
 //Preparando as variáveis para calcular a soma
-    printf("Vamos somar os quesitos de cada carta, o maior vence!!!\n");
-    printf("-----------QUESITO 1 DE COMPARAÇÃO------------\n\n");
+    printf("Vamos somar os quesitos de cada carta, o maior vence!!!\n\n\n");
+    printf("---------QUESITO 1 DE COMPARAÇÃO---------\n");
     
 //buscando os quesitos selecionados, para atribuir as váriáveis de valores para somar
 switch (resultado_um){
@@ -843,10 +855,10 @@ switch (resultado_um){
    quesito a ser somado. */
     printf("Quesitos comparados: População\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), populacao;
-    
+    printf("População: %lu\n", populacao);
+    printf("\n");    
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), populacao_dois;
+    printf("População: %lu\n", populacao_dois);
 
     valor_carta_um_atributo_um = populacao;   
     valor_carta_dois_atributo_um = populacao_dois;
@@ -856,10 +868,10 @@ switch (resultado_um){
     case 2:
     printf("Quesitos comparados: Área\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), area_km;
-    
+    printf("Área: %.2f km²\n\n", area_km);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), area_km_dois;
+    printf("Área: %.2f km²\n\n", area_km);
 
      valor_carta_um_atributo_um = area_km;
      valor_carta_dois_atributo_um = area_km_dois;
@@ -869,65 +881,65 @@ switch (resultado_um){
     case 3:
     printf("Quesitos comparados: PIB\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), pib;
-    
+    printf("PIB: %.2f\n\n", pib);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), pib_dois;
+    printf("PIB: %.2f\n\n"), pib_dois;
 
-     valor_carta_um_atributo_um = pib;
-     valor_carta_dois_atributo_um = pib_dois;
+    valor_carta_um_atributo_um = pib;
+    valor_carta_dois_atributo_um = pib_dois;
 
     break;
 
     case 4:
     printf("Quesitos comparados: Pontos Turísticos\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), pontos_turisticos;
-    
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), pontos_turisticos_dois;
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_dois);
 
-     valor_carta_um_atributo_um = pontos_turisticos;
-     valor_carta_dois_atributo_um = pontos_turisticos_dois;
+    valor_carta_um_atributo_um = pontos_turisticos;
+    valor_carta_dois_atributo_um = pontos_turisticos_dois;
 
     break;
 
     case 5:
     printf("Quesitos comparados: Densidade Populacional\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), densidade_populacional;
-    
+    printf("Densidade populacional: %.2f hab/km² \n", densidade_populacional);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), densidade_populacional_dois;
+    printf("Densidade populacional: %.2f hab/km² \n", densidade_populacional_dois);
 
-     valor_carta_um_atributo_um = densidade_populacional;
-     valor_carta_dois_atributo_um = densidade_populacional_dois;
+    valor_carta_um_atributo_um = densidade_populacional;
+    valor_carta_dois_atributo_um = densidade_populacional_dois;
 
     break;
 
     case 6:
     printf("Quesitos comparados: PIB Per Capita\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), per_capita;
-    
+    printf("PIB per capita: %.2f reais \n", per_capita);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), per_capita_dois;
+    printf("PIB per capita: %.2f reais \n", per_capita);
 
-     valor_carta_um_atributo_um = per_capita;
-     valor_carta_dois_atributo_um = per_capita_dois;
+    valor_carta_um_atributo_um = per_capita;
+    valor_carta_dois_atributo_um = per_capita_dois;
 
     break;
 
     case 7:
     printf("Quesitos comparados: Super poder\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), super_poder;
-    
+    printf("Super Poder: %.2f\n", super_poder);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), super_poder_dois;
+    printf("Super Poder: %.2f\n", super_poder_dois);
 
-     valor_carta_um_atributo_um = super_poder;
-     valor_carta_dois_atributo_um = super_poder_dois;
+    valor_carta_um_atributo_um = super_poder;
+    valor_carta_dois_atributo_um = super_poder_dois;
 
     break;
 
@@ -936,97 +948,98 @@ switch (resultado_um){
     break;
 }
 
-printf("------------------------QUESITO 2 DE COMPARAÇÃO------------------------");
+printf("\n\n");
+printf("---------QUESITO 2 DE COMPARAÇÃO---------\n");
 //Switch seguinte
 switch (resultado_dois){
     case 1:
     printf("Quesitos comparados: População\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), populacao;
-    
+    printf("População: %lu\n", populacao);
+    printf("\n");    
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), populacao_dois;
+    printf("População: %lu\n", populacao_dois);
 
-    valor_carta_um_atributo_um = populacao;   
-    valor_carta_dois_atributo_um = populacao_dois;
+    valor_carta_um_atributo_dois = populacao;   
+    valor_carta_dois_atributo_dois = populacao_dois;
              
     break;
 
     case 2:
     printf("Quesitos comparados: Área\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), area_km;
-    
+    printf("Área: %.2f km²\n\n", area_km);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), area_km_dois;
+    printf("Área: %.2f km²\n\n", area_km);
 
-     valor_carta_um_atributo_um = area_km;
-     valor_carta_dois_atributo_um = area_km_dois;
+    valor_carta_um_atributo_dois = area_km;
+    valor_carta_dois_atributo_dois = area_km_dois;
     
     break;
 
     case 3:
     printf("Quesitos comparados: PIB\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), pib;
-    
+    printf("PIB: %.2f\n\n", pib);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), pib_dois;
+    printf("PIB: %.2f\n\n"), pib_dois;
 
-     valor_carta_um_atributo_um = pib;
-     valor_carta_dois_atributo_um = pib_dois;
+    valor_carta_um_atributo_dois = pib;
+    valor_carta_dois_atributo_dois = pib_dois;
 
     break;
 
     case 4:
     printf("Quesitos comparados: Pontos Turísticos\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), pontos_turisticos;
-    
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), pontos_turisticos_dois;
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos_dois);
 
-     valor_carta_um_atributo_um = pontos_turisticos;
-     valor_carta_dois_atributo_um = pontos_turisticos_dois;
+    valor_carta_um_atributo_dois = pontos_turisticos;
+    valor_carta_dois_atributo_dois = pontos_turisticos_dois;
 
     break;
 
     case 5:
     printf("Quesitos comparados: Densidade Populacional\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), densidade_populacional;
-    
+    printf("Densidade populacional: %.2f hab/km² \n", densidade_populacional);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), densidade_populacional_dois;
+    printf("Densidade populacional: %.2f hab/km² \n", densidade_populacional_dois);
 
-     valor_carta_um_atributo_um = densidade_populacional;
-     valor_carta_dois_atributo_um = densidade_populacional_dois;
+    valor_carta_um_atributo_dois = densidade_populacional;
+    valor_carta_dois_atributo_dois = densidade_populacional_dois;
 
     break;
 
     case 6:
     printf("Quesitos comparados: PIB Per Capita\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), per_capita;
-    
+    printf("PIB per capita: %.2f reais \n", per_capita);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), per_capita_dois;
+    printf("PIB per capita: %.2f reais \n", per_capita);
 
-     valor_carta_um_atributo_um = per_capita;
-     valor_carta_dois_atributo_um = per_capita_dois;
+    valor_carta_um_atributo_dois = per_capita;
+    valor_carta_dois_atributo_dois = per_capita_dois;
 
     break;
 
     case 7:
     printf("Quesitos comparados: Super poder\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
-    printf("Valor Carta 1: %lu\n"), super_poder;
-    
+    printf("Super Poder: %.2f\n", super_poder);
+    printf("\n");
     printf("Nome do País carta 2: %s", nome_do_pais_dois);
-    printf("Valor Carta 2: %lu\n"), super_poder_dois;
+    printf("Super Poder: %.2f\n", super_poder_dois);
 
-     valor_carta_um_atributo_um = super_poder;
-     valor_carta_dois_atributo_um = super_poder_dois;
+    valor_carta_um_atributo_dois = super_poder;
+    valor_carta_dois_atributo_dois = super_poder_dois;
 
     break;
 
@@ -1035,28 +1048,40 @@ switch (resultado_dois){
     break;
 }
 
-    printf("\n");
-    printf("----------------------------------//----------------------------------");
-    printf("\n");
-    ("RESULTADO DA SOMA DOS 2 ATRIBUTOS SELECIONÁDOS!!\n");
-    printf("Soma dos atributos carta 1: \n");
+    printf("\n\n");
+    printf("---------------RESULTADO DA SOMA DOS 2 ATRIBUTOS SELECIONÁDOS---------------\n\n");
+    
+    //Soma dos valores dos 2 quesitos da carta 1.
+    printf("---------Soma dos 2 quesitos da carta 1---------\n\n");
+    soma_um =(float) valor_carta_um_atributo_um + valor_carta_um_atributo_dois;
+    printf("Resultado da soma dos 2 quesitos carta 1: %.2f\n\n\n", soma_um);
 
-//Soma dos valores dos quesito carta 1.
-    soma_um = valor_carta_um_atributo_um + valor_carta_um_atributo_dois;
 
-////Soma dos valores dos quesito carta 2.
-    soma_dois = valor_carta_dois_atributo_um + valor_carta_dois_atributo_dois;
+    //Soma dos valores dos 2 quesitos da carta 2.
+    printf("---------Soma dos 2 quesitos carta 2--------\n\n");
+    soma_dois =(float) valor_carta_dois_atributo_um + valor_carta_dois_atributo_dois;
+    printf("Resultado da soma dos 2 quesitos carta 2: %.2f\n\n", soma_dois);
+
+
+    //Resultado final geral Carta vencedora
+    printf("--------------Carta vencedora na soma dos 2 quesitos selecionados--------------\n\n");
+    if (soma_um > soma_dois){
+        printf("Carta 1 venceu na soma dos 2 quesitos selecionados!");
+    } else if (soma_um < soma_dois){
+        printf("Carta 2 venceu na soma dos 2 quesitos selecionados!");
+    } else{
+        printf("Houve um empate na soma dos quesitos selecionados das duas cartas!");
+    }
+    
+    
 
      
-    printf("\n");
-    printf("\n");
-
-    
+    printf("\n\n");
+  
 
     printf("Obrigado por jogar!");
 
-    printf("\n");
-    printf("\n");
+    printf("\n\n");
     
     return 0;
 };
