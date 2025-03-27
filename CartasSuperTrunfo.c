@@ -212,16 +212,17 @@ int main() {
     super_poder_dois = (float) populacao + area_km + (float) pontos_turisticos + per_capita_dois / 1;
 
 
-    printf("\n");
-    printf("\n");
-    printf("---------------------ÁREA DE COMBATE---------------------\n");
+    printf("\n\n");
+    
+    printf("---------------------ÁREA DE COMBATE---------------------\n\n\n");
 
+    printf("---------------------ESCOLHA OS QUESITOS DE BATALHA---------------------\n\n");
     // Local da lógica de Comparação dos Atributos das Cartas 1 e 2: 
     //Menu de Opções de comparação
-    printf("-------Menu de combate de quesitos das Cartas------- \n");
-    printf("\n");
+    printf("-------Menu de combate de quesitos das Cartas------- \n\n");
+
     printf("Escolha duas opções válidas que represente os quesitos a serem Comparados no desfio!\n\n");
-    printf("Quesitos:\n");
+    printf("Quesitos 1:\n");
     printf("1-População\n");
     printf("2-Área\n");
     printf("3-PIB\n");
@@ -231,7 +232,7 @@ int main() {
     printf("7-Super Poder\n");
     printf("\n\n");
 
-    printf("---------------------ESCOLHA OS QUESITOS DE BATALHA---------------------\n");
+    
     //inserindo as 2 opções desejada do menu
     //Opção 1
     printf("Insira a opção válida do quesito 1 a ser comparado: ");
@@ -243,7 +244,7 @@ int main() {
      um código mais claro e de melhor reparo. 
       */
     resultado_um = opcao_quesito;
-
+    printf("Quesitos2:\n");
 
     switch (opcao_quesito){
     case 1:  
