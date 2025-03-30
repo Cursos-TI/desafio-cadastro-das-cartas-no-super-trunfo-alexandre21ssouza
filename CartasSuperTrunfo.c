@@ -214,6 +214,10 @@ int main() {
 
     printf("\n\n");
     
+
+    /*Este é o ponto do menu interativo de escolha de atributos de combate, onde fois usado: Operador ternário, Switch e If e else
+    na dinâmica de comparação dos atributos selecionados no menu interativo de cada carta.
+    */
     printf("---------------------ÁREA DE COMBATE---------------------\n\n\n");
 
     printf("---------------------ESCOLHA OS QUESITOS DE BATALHA---------------------\n\n");
@@ -233,17 +237,20 @@ int main() {
     printf("\n\n");
 
     
-    //inserindo as 2 opções desejada do menu
+    //Neste trecho é inserido as opções 1 e 2 de atributos desejados do menu.
     //Opção 1
     printf("Insira a opção válida do quesito 1 a ser comparado: ");
     scanf("%d", &opcao_quesito);
     printf("\n");
+
 
     /*Variável resultado_um, armazena da opção_quesito selecionada, para ser usado 
     no switch de comparação de atributos mais a frente no projeto, sendo assim, 
      um código mais claro e de melhor reparo. 
       */
     resultado_um = opcao_quesito;
+
+
     printf("Quesitos2:\n");
 
     switch (opcao_quesito){
@@ -256,14 +263,14 @@ int main() {
          printf("7-Super Poder\n");
          printf("\n");
 
-     //Escolha Opção quesito 2 a ser comparado
+     //Escolha Opção quesito 2 a ser comparado, a opção 2 está aninhada já dentro da opção 1, pois assim, enchugamos mais o código.
      printf("insira a opção válida do quesito 2 a ser comparado: ");
      scanf("%d", &opcao_quesito_dois);
      printf("\n");
 
 
     /*Variável resultado_dois, armazena da opção_quesito selecionada, para ser usado 
-    no switch de comparação de atributos mais a frente no projeto, sendo assim, 
+    no switch de comparação de atributos mais a frente do projeto, sendo assim, 
      um código mais claro e de melhor reparo. 
      */
      resultado_dois = opcao_quesito_dois;
@@ -425,7 +432,14 @@ int main() {
         break;
     }
    
-    //Estrutura de comparação de quesitos / decisões aninhadas
+
+
+    /*Estrutura de comparação de quesitos / decisões aninhadas. 
+     Este é o Switch que trabalha com as variáveis resultado_um e
+     resultado_dois, que recebem o valor das variáveis opcao_um e opcao_dois, para resolver problemas de reaproveitamento de código,
+     pois estava havendo um erro quando utilizava somente as variáveis opcao_um e opcao_dois para usar em dois switchs ao mesmo tempo
+     */
+    //Comparação de atributos individuais.
     printf("---------------------DUELO DE QUESITOS INDIVIDUAIS SELECIONADOS---------------------\n");
     printf("\n");
 
@@ -634,7 +648,7 @@ int main() {
     printf("\n");
 
 
-    //Variável resultado_dois sendo usada
+    //Variável resultado_dois sendo usada, que seu valor vem da variável opcao_dois,
     switch (resultado_dois)
     {
         case 1:
@@ -839,21 +853,28 @@ int main() {
     printf("\n");
     printf("\n");
 
+/*Desenvolvimento do desafio nível mestre: Neste ponto do código, é o ponto onde os 2 atributos já foram escolhidos, 
+     e aqui serão mostrados os atributos selecionados, com seus países respectivos, sua comparação múltipla, com o 
+     resultado da soma dos atributos de cada carta, onde a maior soma vence e o tratamento de empates, caso haja.
+*/
     printf("---------DUELO DA SOMA DOS QUESITOS INDIVIDUAIS DE CADA CARTA---------\n\n\n");
+
+
 //Preparando as variáveis para calcular a soma
-    printf("Vamos somar os quesitos de cada carta, o maior vence!!!\n\n\n");
-    printf("---------QUESITO 1 DE COMPARAÇÃO---------\n");
-    
-//buscando os quesitos selecionados, para atribuir as váriáveis de valores para somar
+    printf("Vamos somar os 2 quesitos de cada carta, o maior soma vence!!!\n\n\n");
+
+
+//Switch da comparação do primeiro atributos das cartas.
+    printf("---------QUESITO 1 DE COMPARAÇÃO---------\n");  
+//Buscando os quesitos selecionados, para atribuir as váriáveis de valores para somar
 switch (resultado_um){
-    case 1:
-   /* Se resultado_um for 1 ou outro valor abaixo, as variáveis
+     /* Se resultado_um for (1,2,3,4,5,6,7), as variáveis
    valor_carta_um_atributo_um e valor_carta_dois_atributo_um 
    receberão o valor correspondente ao quesito selecionado.
-   
-   Após essa atribuição, o programa executará o próximo switch,
-   que verificará resultado_dois e atribuirá o valor ao segundo
-   quesito a ser somado. */
+      */
+
+      case 1:
+  
     printf("Quesitos comparados: População\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
     printf("População: %lu\n", populacao);
@@ -951,8 +972,16 @@ switch (resultado_um){
 
 printf("\n\n");
 printf("---------QUESITO 2 DE COMPARAÇÃO---------\n");
-//Switch seguinte
+
+
+//Switch da comparação do segundo atributos das cartas.
 switch (resultado_dois){
+
+    /* Se resultado_dois for (1,2,3,4,5,6,7), as variáveis
+   valor_carta_um_atributo_dois e valor_carta_dois_atributo_dois 
+   receberão o valor correspondente ao quesito selecionado.
+      */
+
     case 1:
     printf("Quesitos comparados: População\n\n");
     printf("Nome do País carta 1: %s", nome_do_pais);
@@ -1050,6 +1079,8 @@ switch (resultado_dois){
 }
 
     printf("\n\n");
+
+    //Local de soma dos 2 atributos de cada carta
     printf("---------------RESULTADO DA SOMA DOS 2 ATRIBUTOS SELECIONÁDOS---------------\n\n");
     
     //Soma dos valores dos 2 quesitos da carta 1.
@@ -1064,7 +1095,7 @@ switch (resultado_dois){
     printf("Resultado da soma dos 2 quesitos carta 2: %.2f\n\n", soma_dois);
 
 
-    //Resultado final geral Carta vencedora
+    //Resultado final geral Carta vencedora e tratamento de empate
     printf("--------------Carta vencedora na soma dos 2 quesitos selecionados--------------\n\n");
     if (soma_um > soma_dois){
         printf("Carta 1 venceu na soma dos 2 quesitos selecionados!");
@@ -1075,7 +1106,6 @@ switch (resultado_dois){
     }
     
     
-
      
     printf("\n\n");
   
